@@ -1,6 +1,6 @@
 ### 1.0.0
 - release, this bot is asks stupid questions. 
-- 
+
 <hr />
 
 ### Small Description of bot functional
