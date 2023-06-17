@@ -31,6 +31,7 @@ client.on("messageCreate", (message) => {
     for (var i = 0; i < listWords.length; i++) {
         if (message.content.includes(listWords[i])) {
             message.reply(`что такое **${listWords[i]}**?`);
+            break;
         }
     }
 });
