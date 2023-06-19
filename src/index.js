@@ -1,9 +1,9 @@
 require("dotenv").config();
 const { Client, IntentsBitField, ActivityType } = require("discord.js");
-/*
-openai
+
+// openai
 const { Configuration, OpenAIApi } = require('openai');
-*/
+
 const eventHandler = require("./handlers/eventHandler");
 const listWords = require("./data/list");
 
@@ -38,7 +38,7 @@ client.on("messageCreate", (message) => {
             break;
         }
     }
-    /* OPENAI START
+//      OPENAI START
       if (message.channel.id !== process.env.CHANNEL_ID) return;
       if (message.content.startsWith('!')) return;
 
@@ -89,5 +89,5 @@ client.on("messageCreate", (message) => {
         console.log(`ERR: ${error}`);
       }
     });
-    OPENAI END*/
+//     OPENAI END
 });
