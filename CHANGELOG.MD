@@ -1,3 +1,6 @@
+### 1.0.1
+- new command ```/avatar```, displays choosed user's avatar
+
 ### 1.0.0
 - release, this bot is asks stupid questions. 
 
