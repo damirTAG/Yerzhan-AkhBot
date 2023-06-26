@@ -32,12 +32,14 @@ client.on("messageCreate", (message) => {
     if (message.author.bot) {
         return;
     }
+    /* NEEDS UPDATE
     for (var i = 0; i < listWords.length; i++) {
         if (message.content.includes(listWords[i])) {
             message.reply(`что такое **${listWords[i]}**?`);
             break;
         }
     }
+    */
 //      OPENAI START
       if (message.channel.id !== process.env.CHANNEL_ID) return;
       if (message.content.startsWith('!')) return;
