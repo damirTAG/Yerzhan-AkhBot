@@ -19,7 +19,7 @@ module.exports = {
         const avatarmention = interaction.options.getUser("mention");
         if (avatarmention) {
             embed = new EmbedBuilder()
-                .setTitle(`Аватар @${avatarmention.username}`)
+                .setTitle(`Аватар ${avatarmention.username}`)
                 .setColor("Random")
                 .setImage(`${avatarmention.displayAvatarURL({ size: 1024, format: "png", dynamic: true })}`)
                 .setFooter({ text: "made by ©damirTAG", iconURL: `${interaction.user.displayAvatarURL()}` });
